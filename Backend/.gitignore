@@ -1,0 +1,68 @@
+## Сборочные директории
+bin/
+obj/
+out/
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+## Rider
+.idea/
+*.sln.iml
+
+## Visual Studio Code
+.vscode/
+
+## Папки с логами и временными файлами
+*.log
+*.vspscc
+*.vssscc
+*.tmp
+*.temp
+
+## Папки от тестов
+TestResults/
+nunit-*.xml
+
+## Файлы конфигурации пакетов
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Файлы зависимостей и кэши
+*.nuget.props
+*.nuget.targets
+.nuget/
+*.cache/
+*.config/
+
+## Разное
+_ReSharper*/
+*.DotSettings.user
+*.dotCover
+*.orig
+*.rej
+*.bak
+*.swp
+*.sln.docstates
+
+## Mac/Linux
+.DS_Store
+*.swp
+*.swo
+*.swn
+*~
+
+## Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+## Папка с пользовательскими настройками Visual Studio
+.vs/

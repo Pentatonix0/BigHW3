@@ -110,11 +110,11 @@ _Получение баланса пользователя_
 
 Frontend: http://localhost:5173
 
-API Gateway: http://localhost:8000/swagger/docs
+API Gateway: http://localhost:8000/swagger
 
-OrdersService: http://orders-service:8080/swagger/v1/swagger.json
+OrdersService: http://localhost:8002/swagger
 
-PaymentsService: http://payments-service:8080/swagger/v1/swagger.json
+PaymentsService: http://localhost:8001/swagger
 
 ## 5. Развёртывание
 

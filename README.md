@@ -39,10 +39,14 @@
 -   `OrdersService` создает заказ и сохраняет событие `OrderCreatedEvent` в `Outbox` (`Transactional Outbox`).
 -   OutboxMessageProcessor публикует событие в `RabbitMQ`.
 
-![Payments API](Images/img1.png)
-![Создание аккаунта](Images/img2.png)
-![Пополнение баланса](Images/img3.png)
-![Создание заказа](Images/img4.png)
+![](Images/img1.png)
+_Payments API_
+![](Images/img2.png)
+_Создание аккаунта_
+![](Images/img3.png)
+_Пополнение баланса_
+![](Images/img4.png)
+_Создание заказа_
 
 ### Обработка оплаты
 
@@ -51,7 +55,8 @@
 -   `OutboxMessageProcessor` публикует `PaymentResultEvent`.
 -   `PaymentResultConsumer` в `OrdersService` обновляет статус заказа.
 
-![Получение заказа](Images/img5.png)
+![](Images/img5.png)
+_Получение заказа_
 
 ### Получение заказов
 
@@ -59,7 +64,8 @@
 -   `API Gateway` перенаправляет на `OrdersService`.
 -   `OrdersService` возвращает список заказов.
 
-![Получение заказов пользователя](Images/img6.png)
+![](Images/img6.png)
+_Получение заказов пользователя_
 
 ### Получение баланса
 
@@ -67,7 +73,8 @@
 -   API Gateway перенаправляет на `PaymentsService`.
 -   `PaymentsService` возвращает баланс.
 
-![Получение баланса пользователя](Images/img7.png)
+![](Images/img7.png)
+_Получение баланса пользователя_
 
 ## 3. Компоненты системы
 
@@ -122,5 +129,17 @@ PaymentsService: http://payments-service:8080/swagger/v1/swagger.json
 -   Запуск: `docker-compose up --build`
 
 ## 6. Примеры использования
+
+![](Images/img8.png)
+_Стартовая страница_
+
+![](Images/img9.png)
+_Пополнение баланса_
+
+![](Images/img10.png)
+_Создание Заказа_
+
+![](Images/img11.png)
+_Выполненный заказ_
 
 ## 7. Тестирование
